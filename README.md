@@ -38,4 +38,4 @@ Site acadêmico sobre carros esportivos, novidades e lançamentos automotivos.
 - img/
 
 ## Link do Repositório
-[Inserir o link do GitHub.](https://github.com/Brenogsilva01/faculdadebreno)
+[Inserir o link do GitHub.](https://github.com/Brenogsilva01/af-linguagens-programacao-automotors)
