@@ -1,0 +1,402 @@
+/*
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: Auto Motors
+Aluno 1: Breno Garcia da Silva - RA: 240515
+Aluno 2: Eduardo Henrique da Silva - RA: 251880
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+*/
+
+
+:root {
+    --cor-fundo: #0b0b0d;
+    --cor-card: #17171a;
+    --cor-texto: #f2f2f2;
+    --cor-texto-fraco: #c5c5c5;
+    --cor-destaque: #d62424;
+    --cor-linha: #29292e;
+    --espacamento: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    padding-top: 72px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.menu-principal {
+    background-color: rgba(10, 10, 12, 0.96);
+    border-bottom: 1px solid var(--cor-linha);
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: var(--cor-destaque);
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: var(--cor-destaque) !important;
+}
+
+.carousel-item img {
+    height: 620px;
+    object-fit: cover;
+    filter: brightness(55%);
+}
+
+.carousel-caption {
+    bottom: 25%;
+}
+
+.carousel-caption h1,
+.carousel-caption h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+}
+
+.btn-vermelho {
+    background-color: var(--cor-destaque);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-vermelho:hover {
+    background-color: #a91515;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-contorno {
+    border: 1px solid white;
+    color: white;
+    padding: 10px 24px;
+    margin-left: 8px;
+    text-transform: uppercase;
+}
+
+.btn-contorno:hover {
+    background-color: white;
+    color: #111;
+}
+
+.titulo-secao {
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.apresentacao p {
+    color: var(--cor-texto-fraco);
+}
+
+.foto-destaque {
+    background-color: var(--cor-card);
+    padding: 12px;
+    border: 1px solid var(--cor-linha);
+}
+
+.foto-destaque img {
+    border-radius: 4px;
+}
+
+.foto-destaque figcaption {
+    font-size: 0.85rem;
+    color: var(--cor-texto-fraco);
+    margin-top: 8px;
+}
+
+.destaques {
+    background-color: #101014;
+}
+
+.area-destaques {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.card-info {
+    background-color: var(--cor-card);
+    border: 1px solid var(--cor-linha);
+    padding: 28px;
+    flex: 1 1 260px;
+    max-width: 360px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-info:hover {
+    transform: translateY(-8px);
+    border-color: var(--cor-destaque);
+}
+
+.card-info h3 {
+    color: var(--cor-destaque);
+    text-transform: uppercase;
+}
+
+.card-info p {
+    color: var(--cor-texto-fraco);
+}
+
+.chamada {
+    text-align: center;
+    margin-top: 50px;
+    padding: 35px;
+    background: linear-gradient(135deg, #19191d, #0c0c0e);
+    border: 1px solid var(--cor-linha);
+}
+
+.topo-pagina {
+    background: linear-gradient(135deg, #111, #202024);
+    border-bottom: 1px solid var(--cor-linha);
+}
+
+.topo-pagina h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.topo-pagina p {
+    color: var(--cor-texto-fraco);
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.btn-filtro {
+    background-color: #1d1d22;
+    color: white;
+    border: 1px solid var(--cor-linha);
+    padding: 8px 18px;
+    text-transform: uppercase;
+}
+
+.btn-filtro.ativo,
+.btn-filtro:hover {
+    background-color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+}
+
+.card-carro {
+    background-color: var(--cor-card);
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-linha);
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card-carro:hover,
+.card-destaque-js {
+    transform: translateY(-8px);
+    border-color: var(--cor-destaque);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+}
+
+.card-carro img {
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card-carro:hover img {
+    transform: scale(1.06);
+}
+
+.card-carro .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-carro .card-text {
+    color: var(--cor-texto-fraco);
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--cor-destaque);
+    color: white;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.linha-novidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.linha-novidades article {
+    flex: 1 1 250px;
+    background-color: var(--cor-card);
+    border: 1px solid var(--cor-linha);
+    padding: 24px;
+}
+
+.contato-area {
+    padding-bottom: 80px;
+}
+
+.caixa-contato {
+    background-color: var(--cor-card);
+    border: 1px solid var(--cor-linha);
+    padding: 28px;
+    height: 100%;
+}
+
+.form-control,
+.form-select {
+    background-color: #101014;
+    border: 1px solid #33333a;
+    color: white;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #101014;
+    color: white;
+    border-color: var(--cor-destaque);
+    box-shadow: none;
+}
+
+.redes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 18px 0;
+}
+
+.redes a {
+    color: white;
+    border: 1px solid var(--cor-linha);
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    background-color: var(--cor-destaque);
+}
+
+.rodape {
+    background-color: #050506;
+    border-top: 1px solid var(--cor-linha);
+    padding: 35px 0;
+}
+
+.rodape-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.rodape p {
+    margin-bottom: 5px;
+    color: var(--cor-texto-fraco);
+}
+
+.btn-topo {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    border: none;
+    background-color: var(--cor-destaque);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-weight: bold;
+    z-index: 999;
+}
+
+.btn-topo.mostrar {
+    display: block;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-info,
+.card-carro,
+.caixa-contato {
+    animation: aparecer 0.7s ease;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 66px;
+    }
+
+    .carousel-item img {
+        height: 460px;
+    }
+
+    .carousel-caption {
+        bottom: 12%;
+    }
+
+    .btn-contorno {
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .rodape-flex {
+        text-align: center;
+        justify-content: center;
+    }
+}
