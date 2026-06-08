@@ -1,0 +1,148 @@
+<!--
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: Auto Motors
+Aluno 1: Breno Garcia da Silva - RA: 240515
+Aluno 2: Eduardo Henrique da Silva - RA: 251880
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Motors - Contato</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top menu-principal">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">Auto <span>Motors</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+    <section class="topo-pagina">
+        <div class="container">
+            <h1>Contato</h1>
+            <p>Entre em contato com a AutoPrime Motors. Os dados abaixo são fictícios para uso acadêmico.</p>
+        </div>
+    </section>
+
+    <section class="container contato-area">
+        <div class="row g-4">
+            <article class="col-lg-6">
+                <div class="caixa-contato">
+                    <h2>Envie sua mensagem</h2>
+
+                    <form id="formContato" class="form-contato" action="#" method="post">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome completo:</label>
+                            <input type="text" id="nome" name="nome" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(00) 00000-0000" pattern="\(?\d{2}\)?\s?\d{4,5}-?\d{4}">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="assunto" class="form-label">Assunto:</label>
+                            <select id="assunto" name="assunto" class="form-select" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="duvida">Dúvida</option>
+                                <option value="orcamento">Orçamento</option>
+                                <option value="parceria">Parceria</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-vermelho">Enviar</button>
+                        <button type="reset" class="btn btn-secondary">Limpar</button>
+                    </form>
+                </div>
+            </article>
+
+            <article class="col-lg-6">
+                <div class="caixa-contato">
+                    <h2>Informações</h2>
+                    <p><strong>Endereço:</strong> Av. dos Automóveis, 0 - Sorocaba/SP</p>
+                    <p><strong>Telefone:</strong> (11) 0000-0000</p>
+                    <p><strong>E-mail:</strong> contato@brenoimports.com</p>
+
+                    <div class="redes">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">YouTube</a>
+                    </div>
+
+                    <iframe
+                        title="Mapa de Sorocaba"
+                        src="https://www.google.com/maps?q=Sorocaba%20SP&output=embed"
+                        width="100%"
+                        height="320"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </article>
+        </div>
+    </section>
+</main>
+
+
+<footer class="rodape">
+    <div class="container rodape-flex">
+        <div>
+            <h3>Auto Motors</h3>
+            <p>Projeto desenvolvido para a AF - Linguagens de Programação.</p>
+            <p>Breno Garcia da Silva - RA: 240515</p>
+            <p>Eduardo Henrique da Silva - RA: 251880</p>
+        </div>
+
+        <div>
+            <p>Turma: ADS</p>
+            <p>Disciplina: Linguagens de Programação</p>
+            <p>&copy; 2026 - Projeto acadêmico sem fins comerciais.</p>
+        </div>
+    </div>
+</footer>
+
+<button id="btnTopo" class="btn-topo" aria-label="Voltar ao topo">↑</button>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/script.js"></script>
+
+</body>
+</html>
