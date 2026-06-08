@@ -1,0 +1,169 @@
+<!--
+AF - Avaliação Final - Linguagens de Programação
+Tema do Projeto: AutoPrime Motors
+Aluno 1: Breno Garcia da Silva - RA: 240515
+Aluno 2: Eduardo Henrique da Silva - RA: 251880
+Professor: Abimael de Oliveira
+Data de entrega: 07/06
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Motors - Home</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top menu-principal">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">Auto <span>Motors</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+    <section class="hero">
+        <div id="carouselHome" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/banner-01.jpg" class="d-block w-100" alt="Imagem de carro esportivo Porsche 911">
+                    <div class="carousel-caption">
+                        <h1>Carros com estilo e desempenho</h1>
+                        <p>Um projeto sobre modelos esportivos, lançamentos e novidades automotivas.</p>
+                        <a href="galeria.html" class="btn btn-vermelho">Ver galeria</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./img/banner-02.jpg" class="d-block w-100" alt="Imagem de carro esportivo BMW M4">
+                    <div class="carousel-caption">
+                        <h2>Design que chama atenção</h2>
+                        <p>Modelos com visual moderno, potência e presença nas ruas.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./img/banner-03.jpg" class="d-block w-100" alt="Imagem de Audi RS6 em destaque">
+                    <div class="carousel-caption">
+                        <h2>Performance no dia a dia</h2>
+                        <p>Carros que misturam conforto, tecnologia e motor forte.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <section class="apresentacao container">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <h2 class="titulo-secao">Sobre o projeto</h2>
+                <p>
+                    A AutoPrime Motors é um site acadêmico criado para apresentar carros esportivos,
+                    modelos conhecidos e algumas novidades do mercado automotivo. A ideia foi montar
+                    uma página com visual escuro, imagens grandes e navegação simples.
+                </p>
+                <p>
+                    O site utiliza HTML5, CSS, Bootstrap e JavaScript, aplicando os conteúdos vistos
+                    durante o semestre de Linguagens de Programação.
+                </p>
+            </div>
+
+            <div class="col-md-5">
+                <figure class="foto-destaque">
+                    <img src="./img/galeria-02.jpg" alt="BMW M4 em destaque">
+                    <figcaption>Exemplo de modelo esportivo apresentado no projeto.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="destaques">
+        <div class="container">
+            <h2 class="titulo-secao text-center">Destaques</h2>
+            <div class="area-destaques">
+                <article class="card-info">
+                    <h3>Esportivos</h3>
+                    <p>Modelos feitos para entregar velocidade, estabilidade e visual marcante.</p>
+                </article>
+
+                <article class="card-info">
+                    <h3>Lançamentos</h3>
+                    <p>Carros que chamam atenção pelo design, tecnologia e novidades do setor.</p>
+                </article>
+
+                <article class="card-info">
+                    <h3>Performance</h3>
+                    <p>Automóveis com motor forte, boa aceleração e foco em experiência de direção.</p>
+                </article>
+            </div>
+
+            <div class="chamada">
+                <h2>Confira a galeria completa</h2>
+                <p>Veja alguns carros escolhidos para representar o tema do projeto.</p>
+                <a href="galeria.html" class="btn btn-vermelho">Abrir galeria</a>
+                <a href="contato.html" class="btn btn-contorno">Contato</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer class="rodape">
+    <div class="container rodape-flex">
+        <div>
+            <h3>Auto Motors</h3>
+            <p>Projeto desenvolvido para a AF - Linguagens de Programação.</p>
+            <p>Breno Garcia da Silva - RA: 240515</p>
+            <p>Eduardo Henrique da Silva - RA: 251880</p>
+        </div>
+
+        <div>
+            <p>Turma: ADS</p>
+            <p>Disciplina: Linguagens de Programação</p>
+            <p>&copy; 2026 - Projeto acadêmico sem fins comerciais.</p>
+        </div>
+    </div>
+</footer>
+
+<button id="btnTopo" class="btn-topo" aria-label="Voltar ao topo">↑</button>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/script.js"></script>
+
+</body>
+</html>
